@@ -77,9 +77,9 @@ namespace project_ca_nhan.Controllers
             Random ran = new Random();
             int random = ran.Next(100000, 1000000);
 
-            var FromAddress = new MailAddress("vutung1234567890@gmail.com", "Shop Mail");
+            var FromAddress = new MailAddress("vutung88889@gmail.com", "Shop Mail");
             var ToAddress = new MailAddress(_Email, "Khach Hang");
-            const string formpassword = "gscd vstx cvmt kjgw";
+            const string formpassword = "mobm riko ijaw spac";
             string body = $@"
         <html>
         <body>
