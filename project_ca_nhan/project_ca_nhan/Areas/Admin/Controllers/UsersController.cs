@@ -116,10 +116,10 @@ namespace project_ca_nhan.Areas.Admin.Controllers
                 // gui tin nhan de xac nhan email nay la chinh xac
                 Random r = new Random();
                 int random = r.Next(100000, 1000000);
-                var FromAddress = new MailAddress("vutung1234567890@gmail.com", "Lời Nhắn Từ Admin Cửa Hàng FlatShop");
+                var FromAddress = new MailAddress("vutung88889@gmail.com", "Lời Nhắn Từ Admin Cửa Hàng FlatShop");
 
                 var ToAddress = new MailAddress(_Email, _Name);
-                const string FromPassword = "gscd vstx cvmt kjgw";
+                const string FromPassword = "mobm riko ijaw spac";
                 const string Subject = "Xin Chúc Mừng Bạn Đã Tham Gia Điều Hành FlatShop";
                 string Body = $@"
                         <html>
@@ -130,7 +130,7 @@ namespace project_ca_nhan.Areas.Admin.Controllers
                             <p>Xin Vui Lòng Nhập 6 số Dưới Đây Để Hoàn Tất Chương Trình Đăng Kí Của Bạn</p>
                             <p><strong> {random}</strong></p>
 <p>Xin Vui Lòng Liên Hệ Lại Với Admin Chính Của Hệ Thống , nếu có bất kì thắc mắc nào</p>
-                            <p><strong>Contact:  Email: vutung1234567890@gmail.com Phone: 0941208572</strong></p>
+                            <p><strong>Contact:  Email: vutung88889@gmail.com Phone: 0941208572</strong></p>
                             </body>
 
                         </html>
@@ -236,9 +236,9 @@ namespace project_ca_nhan.Areas.Admin.Controllers
                         db.Users.Remove(timkiem);
                         db.SaveChanges();
                         ItemUsers x = db.Users.Where(x => x.Status == 2).FirstOrDefault();
-                        var FromAddress = new MailAddress("vutung1234567890@gmail.com", "Shop Mail");
+                        var FromAddress = new MailAddress("vutung88889@gmail.com", "Shop Mail");
                         var ToAddress = new MailAddress(timkiem.Email, timkiem.Name);
-                        const string FromPassword = "gscd vstx cvmt kjgw";
+                        const string FromPassword = "mobm riko ijaw spac";
                         const string subject = "Bạn Đã Bị Xóa Khỏi Hệ Thống Admin";
                         string Body = $@"
                         <html>
@@ -288,9 +288,9 @@ namespace project_ca_nhan.Areas.Admin.Controllers
                         db.Users.Remove(timkiem);
                         db.SaveChanges();
                         ItemUsers x = db.Users.Where(x => x.Status == 2).FirstOrDefault();
-                        var FromAddress = new MailAddress("vutung1234567890@gmail.com", "Shop Mail");
+                        var FromAddress = new MailAddress("vutung88889@gmail.com", "Shop Mail");
                         var ToAddress = new MailAddress(timkiem.Email, timkiem.Name);
-                        const string FromPassword = "gscd vstx cvmt kjgw";
+                        const string FromPassword = "mobm riko ijaw spac";
                         const string Subject = "Bạn Đã Bị Xóa Khỏi Hệ Thống Admin";
                         string Body = $@"
 <html>
